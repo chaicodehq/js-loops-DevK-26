@@ -34,5 +34,7 @@ export function chaiTapriRevenue(customers) {
   for (let i = 1; i <= customers; i++) {
     totalRevenue += i % 3 === 0 ? 15 : 10;
   }
+  // Demo change: log output
+  console.log(`Total chai: ${customers}, Total revenue: ${totalRevenue}`);
   return { totalChai: customers, totalRevenue };
 }
